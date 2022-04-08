@@ -159,6 +159,8 @@ if [ "$1" == "run" ]; then
         echo "export APACHE_ARGUMENTS='-D ALLOW_CORS'" >> /etc/apache2/envvars
     fi
 
+
+
     # Initialize PostgreSQL and Apache
     createPostgresConfig
     service postgresql start
